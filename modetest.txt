@@ -1,0 +1,5 @@
+-- modetest --
+1, eDP 与 HDMI 同时显示色块
+  modetest -M rockchip -s 58,56:1920x1080
+  应用打开DRM设备时默认Connectors ID 56 显示。modetest显示色块，
+  需大ID放在前（58，56 而不是56，58），否则其中小ID显示器偏色（当时测试现象）。
